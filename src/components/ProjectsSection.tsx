@@ -13,10 +13,10 @@ const ProjectsSection = () => {
 
   return (
     <section className="py-12 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto">
-      <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center"> {/* Added text-center */}
         Explore my latest <span className="text-blue-600">Projects</span>
       </h2>
-      <p className="text-gray-700 mb-8 text-lg">
+      <p className="text-gray-700 mb-8 text-lg text-center"> {/* Added text-center */}
         These projects showcase my commitment to crafting unique, high-performance digital experiences tailored to every need.
       </p>
 
