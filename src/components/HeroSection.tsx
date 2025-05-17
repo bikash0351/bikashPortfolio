@@ -46,7 +46,7 @@ const HeroSection = () => {
             className="rounded-lg mb-4 object-cover w-full h-auto"
           />
           <div className="font-semibold text-xl mb-1">Bikash Gupta</div>
-          <div className="text-gray-600">Senior Product Designer at Milano</div> {/* Placeholder title/company */}
+          <div className="text-gray-600">Web Developer</div> {/* Changed title */}
         </div>
       </div>
     </section>
