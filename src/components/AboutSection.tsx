@@ -41,17 +41,17 @@ const AboutSection = () => {
             <Briefcase size={28} className="text-blue-600 mr-3" /> Experience
           </h3>
           <div className="space-y-6"> {/* Increased space between items */}
-            {/* Experience Item 1 (WordPress Developer) */}
-            <div>
-              <p className="font-bold text-lg">WordPress Developer</p> {/* Bold title */}
-              <p className="text-gray-600 text-sm mb-2">Haitomns Groups Private Limited | 2023</p> {/* Gray subtitle */}
-              <p className="text-700">Developed fully functional e-commerce and online food delivery websites.</p> {/* Description */}
-            </div>
-            {/* Experience Item 2 (CEO) */}
+            {/* Experience Item 1 (CEO) - Moved to top */}
             <div>
               <p className="font-bold text-lg">CEO</p> {/* Bold title */}
               <p className="text-gray-600 text-sm mb-2">RoboxCraft | (Current)</p> {/* Gray subtitle */}
-              <p className="text-gray-700">We provide IoT and Robotics Parts and Project</p> {/* Updated Description */}
+              <p className="text-gray-700">We provide IoT and Robotics Parts and Projects.</p> {/* Updated Description */}
+            </div>
+            {/* Experience Item 2 (WordPress Developer) */}
+            <div>
+              <p className="font-bold text-lg">WordPress Developer</p> {/* Bold title */}
+              <p className="text-gray-600 text-sm mb-2">Haitomns Groups Private Limited | 2023</p> {/* Gray subtitle */}
+              <p className="text-gray-700">Developed fully functional e-commerce and online food delivery websites.</p> {/* Description */}
             </div>
             {/* Add more experience items as needed */}
           </div>
