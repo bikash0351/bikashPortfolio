@@ -12,12 +12,12 @@ const Header = () => {
         {/* Logo/Name */}
         <div className="flex items-center space-x-3 flex-shrink-0">
           <Avatar>
-            {/* Replace with Bikas Gupta's image */}
-            <AvatarImage src="https://via.placeholder.com/40" alt="Bikas Gupta" />
+            {/* Replace with Bikash Gupta's image */}
+            <AvatarImage src="https://via.placeholder.com/40" alt="Bikash Gupta" />
             <AvatarFallback>BG</AvatarFallback>
           </Avatar>
           <div>
-            <div className="font-semibold text-lg">Bikas Gupta</div>
+            <div className="font-semibold text-lg">Bikash Gupta</div>
             <div className="text-sm text-gray-600">Web Developer</div> {/* Changed title */}
           </div>
         </div>
