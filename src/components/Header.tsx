@@ -19,9 +19,9 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Navigation Links (Hidden on small screens, could add a mobile menu later) */}
-      {/* Updated links to match website sections */}
-      <nav className="hidden md:flex space-x-6">
+      {/* Navigation Links (Hidden on small screens, centered on md+) */}
+      {/* Using md:mx-auto to help center the navigation block */}
+      <nav className="hidden md:flex md:mx-auto space-x-6">
         <Link to="/" className="text-gray-700 hover:text-gray-900">Home</Link>
         <Link to="/about" className="text-gray-700 hover:text-gray-900">About</Link>
         <Link to="/projects" className="text-gray-700 hover:text-gray-900">Projects</Link>
@@ -31,8 +31,7 @@ const Header = () => {
       {/* Buttons */}
       <div className="flex space-x-3">
         <Button variant="outline" className="hidden md:inline-flex">Get In Touch</Button>
-        {/* Changed button text */}
-        <Button>Email</Button>
+        <Button>Email</Button> {/* Button text is now 'Email' */}
       </div>
     </header>
   );
