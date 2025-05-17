@@ -15,12 +15,20 @@ const HeroSection = () => {
           <p className="text-gray-700 mb-8 text-lg">
             Hey, I'm Bikash, a web developer passionate about crafting beautiful, full-stack websites with complete functionality. I specialize in creating modern, minimal applications with a strong focus on user experience and robust development practices.
           </p>
-          {/* Social Icons - Updated */}
+          {/* Social Icons - Updated with links */}
           <div className="flex space-x-4 mb-8">
-            <Facebook size={24} className="text-gray-600 hover:text-gray-900 cursor-pointer" />
-            <Instagram size={24} className="text-gray-600 hover:text-gray-900 cursor-pointer" />
-            <Linkedin size={24} className="text-gray-600 hover:text-gray-900 cursor-pointer" />
-            <Github size={24} className="text-gray-600 hover:text-gray-900 cursor-pointer" />
+            <a href="https://www.facebook.com/hsakibatpug" target="_blank" rel="noopener noreferrer">
+              <Facebook size={24} className="text-gray-600 hover:text-gray-900 cursor-pointer" />
+            </a>
+            <a href="https://www.instagram.com/bikash.gupta.official/" target="_blank" rel="noopener noreferrer">
+              <Instagram size={24} className="text-gray-600 hover:text-gray-900 cursor-pointer" />
+            </a>
+            <a href="http://linkedin.com/in/bikashgupta0351" target="_blank" rel="noopener noreferrer">
+              <Linkedin size={24} className="text-gray-600 hover:text-gray-900 cursor-pointer" />
+            </a>
+            <a href="https://github.com/bikash0351" target="_blank" rel="noopener noreferrer">
+              <Github size={24} className="text-gray-600 hover:text-gray-900 cursor-pointer" />
+            </a>
           </div>
           {/* Buttons - Removed "Get in touch" button */}
           <div className="flex space-x-4">
