@@ -19,17 +19,17 @@ const AboutSection = () => {
             <GraduationCap size={28} className="text-blue-600 mr-3" /> Education
           </h3>
           <div className="space-y-6"> {/* Increased space between items */}
-            {/* Placeholder Education Item 1 */}
+            {/* Education Item 1 */}
             <div>
               <p className="font-bold text-lg">Bachelor of Science in Computer Science</p> {/* Bold title */}
-              <p className="text-gray-600 text-sm mb-2">University Name | 2018 - 2022</p> {/* Gray subtitle */}
+              <p className="text-gray-600 text-sm mb-2">NITTE Meenakshi Institute of Technology, Bangalore | (Ongoing)</p> {/* Gray subtitle */}
               <p className="text-gray-700">Focused on software development, data structures, and algorithms.</p> {/* Description */}
             </div>
-            {/* Placeholder Education Item 2 */}
+            {/* Education Item 2 */}
             <div>
-              <p className="font-bold text-lg">Another Certification/Course</p> {/* Bold title */}
-              <p className="text-gray-600 text-sm mb-2">Another Institution | Year</p> {/* Gray subtitle */}
-              <p className="text-gray-700">Brief description of the course or certification.</p> {/* Description */}
+              <p className="font-bold text-lg">Technical Education in Computer Engineering</p> {/* Bold title */}
+              <p className="text-gray-600 text-sm mb-2">Shree Nrisingh Madhyamika Vidyalaya, Birgunj | 2023</p> {/* Gray subtitle */}
+              <p className="text-gray-700">Had a brief knowledge about computer and its branches.</p> {/* Description */}
             </div>
             {/* Add more education items as needed */}
           </div>
