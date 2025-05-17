@@ -10,10 +10,10 @@ const ContactFormSection = () => {
       <h2 className="text-3xl md:text-4xl font-bold mb-2 text-center">
         Get In <span className="text-blue-600">Touch</span>
       </h2>
-      {/* Subtitle - Removed */}
-      {/* <p className="text-gray-700 text-lg mb-8 text-center">
+      {/* Subtitle - Uncommented */}
+      <p className="text-gray-700 text-lg mb-8 text-center">
         Have a project in mind or just want to say hello? Fill out the form below.
-      </p> */}
+      </p>
       <div className="bg-white p-8 rounded-lg shadow-md max-w-lg mx-auto">
         <h3 className="text-xl font-semibold mb-6 text-center">Send a Message</h3> {/* Centered title */}
         <form className="space-y-6">
