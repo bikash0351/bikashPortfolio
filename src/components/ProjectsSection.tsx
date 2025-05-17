@@ -6,6 +6,7 @@ const ProjectsSection = () => {
   // Categorized project data
   const allProjects = [
     { id: 1, title: 'Taaza Food', category: 'Food Ordering Platform', type: 'software', imageUrl: './images/taaza-food.jpeg' },
+    { id: 5, title: 'Portfolio Website', category: 'Personal Website', type: 'software', imageUrl: 'https://via.placeholder.com/400x200' }, // Added placeholder software project
     { id: 2, title: 'RoboxCraft', category: 'IoT and Robottics Project', type: 'software', imageUrl: './images/robox-craft.png' }, // Changed type to 'software'
     { id: 3, title: 'Human Following Robot', category: 'AI Enabled Human Tracking Robot', type: 'robotics', imageUrl: './images/face-bot-robot.jpg' },
     { id: 4, title: 'Arduino Obstacle Avoiding Car', category: 'Obstacle Avoiding Car', type: 'robotics', imageUrl: './images/obstacle-bot-robot.jpg' },
@@ -25,11 +26,11 @@ const ProjectsSection = () => {
       </p>
 
       {/* Software Projects Section */}
-      <div className="mb-12"> {/* Add margin bottom to separate sections */}
-        <h3 className="text-2xl font-semibold mb-6 flex items-center"> {/* Sub-heading with icon */}
+      <div className="mb-12 text-center"> {/* Add margin bottom and text-center */}
+        <h3 className="text-2xl font-semibold mb-6 flex items-center justify-center"> {/* Sub-heading with icon, centered */}
           <Code size={28} className="text-blue-600 mr-3" /> Software Projects
         </h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"> {/* Grid layout */}
           {softwareProjects.map(project => (
             <Card
               key={project.id}
@@ -38,7 +39,7 @@ const ProjectsSection = () => {
                          hover:scale-105 hover:shadow-lg" // Added hover animation classes
             >
               <img src={project.imageUrl} alt={project.title} className="w-full h-48 object-cover" />
-              <CardContent className="p-4 text-center"> {/* Added text-center here */}
+              <CardContent className="p-4 text-center"> {/* Text already centered */}
                 <h3 className="text-lg font-semibold mb-1">{project.title}</h3>
                 <p className="text-gray-600 text-sm">{project.category}</p>
               </CardContent>
@@ -48,11 +49,11 @@ const ProjectsSection = () => {
       </div>
 
       {/* Robotics Projects Section */}
-      <div> {/* No margin bottom on the last section */}
-        <h3 className="text-2xl font-semibold mb-6 flex items-center"> {/* Sub-heading with icon */}
+      <div className="text-center"> {/* Add text-center */}
+        <h3 className="text-2xl font-semibold mb-6 flex items-center justify-center"> {/* Sub-heading with icon, centered */}
           <Bot size={28} className="text-blue-600 mr-3" /> Robotics Projects
         </h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"> {/* Grid layout */}
           {roboticsProjects.map(project => (
             <Card
               key={project.id}
@@ -61,7 +62,7 @@ const ProjectsSection = () => {
                          hover:scale-105 hover:shadow-lg" // Added hover animation classes
             >
               <img src={project.imageUrl} alt={project.title} className="w-full h-48 object-cover" />
-              <CardContent className="p-4 text-center"> {/* Added text-center here */}
+              <CardContent className="p-4 text-center"> {/* Text already centered */}
                 <h3 className="text-lg font-semibold mb-1">{project.title}</h3>
                 <p className="text-gray-600 text-sm">{project.category}</p>
               </CardContent>
