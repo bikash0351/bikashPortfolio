@@ -1,19 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react'; // Import useState
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
-import { showSuccess } from '@/utils/toast'; // Import the showSuccess function
+// Removed showSuccess import as we are no longer using toast here
+// import { showSuccess } from '@/utils/toast';
 
 const ContactFormSection = () => {
+  // State to track the form submission status
+  const [status, setStatus] = useState<'idle' | 'sent'>('idle');
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault(); // Prevent the default form submission
-    // Here you would typically handle form data (e.g., send to an API)
-    // For now, we just show a success message
-    showSuccess("Message sent successfully!");
-    console.log("Form submitted (prevented default). Success toast shown.");
-    // Optionally, clear the form fields here
+
+    // Simulate sending the message (no actual sending happens here)
+    console.log("Form submitted (prevented default). Updating button text.");
+
+    // Update the status to 'sent'
+    setStatus('sent');
+
+    // Optionally, clear the form fields here if needed
     // event.currentTarget.reset();
   };
 
@@ -31,18 +37,20 @@ const ContactFormSection = () => {
         <form className="space-y-6" onSubmit={handleSubmit}> {/* Add onSubmit handler */}
           <div>
             <Label htmlFor="name">Name</Label>
-            <Input id="name" placeholder="Your Name" />
+            <Input id="name" placeholder="Your Name" disabled={status === 'sent'} /> {/* Disable input after sending */}
           </div>
           <div>
             <Label htmlFor="email">Email</Label>
-            <Input id="email" type="email" placeholder="Your Email" />
+            <Input id="email" type="email" placeholder="Your Email" disabled={status === 'sent'} /> {/* Disable input after sending */}
           </div>
           <div>
             <Label htmlFor="message">Message</Label>
-            <Textarea id="message" placeholder="Your Message" rows={5} />
+            <Textarea id="message" placeholder="Your Message" rows={5} disabled={status === 'sent'} /> {/* Disable textarea after sending */}
           </div>
-          {/* Button uses default dark style */}
-          <Button type="submit" className="w-full">Send Message</Button>
+          {/* Button text changes based on status, and button is disabled after sending */}
+          <Button type="submit" className="w-full" disabled={status === 'sent'}>
+            {status === 'sent' ? 'Message Sent!' : 'Send Message'}
+          </Button>
         </form>
       </div>
     </section>
