@@ -45,13 +45,13 @@ const AboutSection = () => {
             <div>
               <p className="font-bold text-lg">WordPress Developer</p> {/* Bold title */}
               <p className="text-gray-600 text-sm mb-2">Haitomns Groups Private Limited | 2023</p> {/* Gray subtitle */}
-              <p className="text-gray-700">Developed fully functional e-commerce and online food delivery websites.</p> {/* Description */}
+              <p className="text-700">Developed fully functional e-commerce and online food delivery websites.</p> {/* Description */}
             </div>
             {/* Experience Item 2 (CEO) */}
             <div>
               <p className="font-bold text-lg">CEO</p> {/* Bold title */}
               <p className="text-gray-600 text-sm mb-2">RoboxCraft | (Current)</p> {/* Gray subtitle */}
-              <p className="text-gray-700">Leading the company and overseeing operations.</p> {/* Placeholder Description */}
+              <p className="text-gray-700">We provide IoT and Robotics Parts and Project</p> {/* Updated Description */}
             </div>
             {/* Add more experience items as needed */}
           </div>
