@@ -10,10 +10,10 @@ const HeroSection = () => {
         {/* Left Card (Text Content) */}
         <div className="bg-white p-8 rounded-lg shadow-md flex-1 w-full md:w-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-            Bring Your Web Design <br /> Ideas to Life <span className="text-blue-600">with Framer</span> {/* Placeholder text */}
+            Building Modern, Minimal <br /> & Functional Websites <span className="text-blue-600">for You</span>
           </h1>
           <p className="text-gray-700 mb-8 text-lg">
-            Hey, I'm Bikash, welcome to my world. I design high-performance, visually stunning websites using Framer—blending creativity, speed, and seamless user experience. {/* Placeholder description */}
+            Hey, I'm Bikash, a web developer passionate about crafting beautiful, full-stack websites with complete functionality. I specialize in creating modern, minimal applications with a strong focus on user experience and robust development practices.
           </p>
           {/* Social Icons - Updated */}
           <div className="flex space-x-4 mb-8">
