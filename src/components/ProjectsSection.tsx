@@ -30,21 +30,24 @@ const ProjectsSection = () => {
         <h3 className="text-2xl font-semibold mb-6 flex items-center justify-center"> {/* Sub-heading with icon, centered */}
           <Code size={28} className="text-blue-600 mr-3" /> Software Projects
         </h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"> {/* Grid layout */}
-          {softwareProjects.map(project => (
-            <Card
-              key={project.id}
-              className="overflow-hidden cursor-pointer
-                         transition-transform duration-300 ease-in-out
-                         hover:scale-105 hover:shadow-lg" // Added hover animation classes
-            >
-              <img src={project.imageUrl} alt={project.title} className="w-full h-48 object-cover" />
-              <CardContent className="p-4 text-center"> {/* Text already centered */}
-                <h3 className="text-lg font-semibold mb-1">{project.title}</h3>
-                <p className="text-gray-600 text-sm">{project.category}</p>
-              </CardContent>
-            </Card>
-          ))}
+        {/* Wrap grid in flex container to center the grid itself */}
+        <div className="flex justify-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"> {/* Grid layout */}
+            {softwareProjects.map(project => (
+              <Card
+                key={project.id}
+                className="overflow-hidden cursor-pointer
+                           transition-transform duration-300 ease-in-out
+                           hover:scale-105 hover:shadow-lg" // Added hover animation classes
+              >
+                <img src={project.imageUrl} alt={project.title} className="w-full h-48 object-cover" />
+                <CardContent className="p-4 text-center"> {/* Text already centered */}
+                  <h3 className="text-lg font-semibold mb-1">{project.title}</h3>
+                  <p className="text-gray-600 text-sm">{project.category}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </div>
 
@@ -53,21 +56,24 @@ const ProjectsSection = () => {
         <h3 className="text-2xl font-semibold mb-6 flex items-center justify-center"> {/* Sub-heading with icon, centered */}
           <Bot size={28} className="text-blue-600 mr-3" /> Robotics Projects
         </h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"> {/* Grid layout */}
-          {roboticsProjects.map(project => (
-            <Card
-              key={project.id}
-              className="overflow-hidden cursor-pointer
-                         transition-transform duration-300 ease-in-out
-                         hover:scale-105 hover:shadow-lg" // Added hover animation classes
-            >
-              <img src={project.imageUrl} alt={project.title} className="w-full h-48 object-cover" />
-              <CardContent className="p-4 text-center"> {/* Text already centered */}
-                <h3 className="text-lg font-semibold mb-1">{project.title}</h3>
-                <p className="text-gray-600 text-sm">{project.category}</p>
-              </CardContent>
-            </Card>
-          ))}
+        {/* Wrap grid in flex container to center the grid itself */}
+        <div className="flex justify-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"> {/* Grid layout */}
+            {roboticsProjects.map(project => (
+              <Card
+                key={project.id}
+                className="overflow-hidden cursor-pointer
+                           transition-transform duration-300 ease-in-out
+                           hover:scale-105 hover:shadow-lg" // Added hover animation classes
+              >
+                <img src={project.imageUrl} alt={project.title} className="w-full h-48 object-cover" />
+                <CardContent className="p-4 text-center"> {/* Text already centered */}
+                  <h3 className="text-lg font-semibold mb-1">{project.title}</h3>
+                  <p className="text-gray-600 text-sm">{project.category}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </div>
     </section>
