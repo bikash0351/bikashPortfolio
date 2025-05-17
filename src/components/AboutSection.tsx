@@ -4,7 +4,7 @@ import { GraduationCap, Briefcase } from 'lucide-react'; // Import icons
 const AboutSection = () => {
   return (
     <section className="py-12 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto">
-      <h2 className="text-3xl md:text-4xl font-bold mb-2 text-center">
+      <h2 className="text-3xl md::text-4xl font-bold mb-2 text-center">
         About <span className="text-blue-600">Me</span>
       </h2>
       {/* Subtitle */}
@@ -41,11 +41,17 @@ const AboutSection = () => {
             <Briefcase size={28} className="text-blue-600 mr-3" /> Experience
           </h3>
           <div className="space-y-6"> {/* Increased space between items */}
-            {/* Experience Item 1 */}
+            {/* Experience Item 1 (WordPress Developer) */}
             <div>
               <p className="font-bold text-lg">WordPress Developer</p> {/* Bold title */}
               <p className="text-gray-600 text-sm mb-2">Haitomns Groups Private Limited | 2023</p> {/* Gray subtitle */}
               <p className="text-gray-700">Developed fully functional e-commerce and online food delivery websites.</p> {/* Description */}
+            </div>
+            {/* Experience Item 2 (CEO) */}
+            <div>
+              <p className="font-bold text-lg">CEO</p> {/* Bold title */}
+              <p className="text-gray-600 text-sm mb-2">RoboxCraft | (Current)</p> {/* Gray subtitle */}
+              <p className="text-gray-700">Leading the company and overseeing operations.</p> {/* Placeholder Description */}
             </div>
             {/* Add more experience items as needed */}
           </div>
