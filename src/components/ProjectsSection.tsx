@@ -6,7 +6,6 @@ const ProjectsSection = () => {
   // Categorized project data
   const allProjects = [
     { id: 1, title: 'Taaza Food', category: 'Food Ordering Platform', type: 'software', imageUrl: './images/taaza-food.jpeg' },
-    { id: 5, title: 'Portfolio Website', category: 'Personal Website', type: 'software', imageUrl: 'https://via.placeholder.com/400x200' }, // Added placeholder software project
     { id: 2, title: 'RoboxCraft', category: 'IoT and Robottics Project', type: 'software', imageUrl: './images/robox-craft.png' }, // Changed type to 'software'
     { id: 3, title: 'Human Following Robot', category: 'AI Enabled Human Tracking Robot', type: 'robotics', imageUrl: './images/face-bot-robot.jpg' },
     { id: 4, title: 'Arduino Obstacle Avoiding Car', category: 'Obstacle Avoiding Car', type: 'robotics', imageUrl: './images/obstacle-bot-robot.jpg' },
