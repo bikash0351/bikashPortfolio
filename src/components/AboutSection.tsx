@@ -41,17 +41,11 @@ const AboutSection = () => {
             <Briefcase size={28} className="text-blue-600 mr-3" /> Experience
           </h3>
           <div className="space-y-6"> {/* Increased space between items */}
-            {/* Placeholder Experience Item 1 */}
+            {/* Experience Item 1 */}
             <div>
-              <p className="font-bold text-lg">Web Developer</p> {/* Bold title */}
-              <p className="text-gray-600 text-sm mb-2">Tech Company | 2022 - Present</p> {/* Gray subtitle */}
-              <p className="text-gray-700">Developed and maintained web applications using React, TypeScript, and Node.js.</p> {/* Description */}
-            </div>
-            {/* Placeholder Experience Item 2 */}
-            <div>
-              <p className="font-bold text-lg">Previous Job Title</p> {/* Bold title */}
-              <p className="text-gray-600 text-sm mb-2">Another Company | Year - Year</p> {/* Gray subtitle */}
-              <p className="text-gray-700">Description of responsibilities or achievements in this role.</p> {/* Description */}
+              <p className="font-bold text-lg">WordPress Developer</p> {/* Bold title */}
+              <p className="text-gray-600 text-sm mb-2">Haitomns Groups Private Limited | 2023</p> {/* Gray subtitle */}
+              <p className="text-gray-700">Developed fully functional e-commerce and online food delivery websites.</p> {/* Description */}
             </div>
             {/* Add more experience items as needed */}
           </div>
