@@ -3,20 +3,32 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
+import { showSuccess } from '@/utils/toast'; // Import the showSuccess function
 
 const ContactFormSection = () => {
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault(); // Prevent the default form submission
+    // Here you would typically handle form data (e.g., send to an API)
+    // For now, we just show a success message
+    showSuccess("Message sent successfully!");
+    console.log("Form submitted (prevented default). Success toast shown.");
+    // Optionally, clear the form fields here
+    // event.currentTarget.reset();
+  };
+
   return (
     <section className="py-12 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto">
       <h2 className="text-3xl md:text-4xl font-bold mb-2 text-center">
         Get In <span className="text-blue-600">Touch</span>
       </h2>
-      {/* Subtitle - Uncommented */}
+      {/* Subtitle */}
       <p className="text-gray-700 text-lg mb-8 text-center">
         Have a project in mind or just want to say hello? Fill out the form below.
       </p>
       <div className="bg-white p-8 rounded-lg shadow-md max-w-lg mx-auto">
         <h3 className="text-xl font-semibold mb-6 text-center">Send a Message</h3> {/* Centered title */}
-        <form className="space-y-6">
+        <form className="space-y-6" onSubmit={handleSubmit}> {/* Add onSubmit handler */}
           <div>
             <Label htmlFor="name">Name</Label>
             <Input id="name" placeholder="Your Name" />
