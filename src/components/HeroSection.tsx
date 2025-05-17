@@ -32,7 +32,10 @@ const HeroSection = () => {
           </div>
           {/* Buttons - Removed "Get in touch" button */}
           <div className="flex space-x-4">
-            <Button size="lg">Send Email</Button> {/* Keep 'Send Email' button */}
+             {/* Wrapped Button in an anchor tag with mailto link */}
+            <a href="mailto:bikashgupta0351@gmail.com" target="_blank" rel="noopener noreferrer">
+              <Button size="lg">Send Email</Button> {/* Keep 'Send Email' button */}
+            </a>
             {/* Removed 'Get in touch' button */}
           </div>
         </div>

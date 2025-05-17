@@ -6,7 +6,8 @@ const ProjectsSection = () => {
   // Categorized project data
   const allProjects = [
     { id: 1, title: 'Taaza Food', category: 'Food Ordering Platform', type: 'software', imageUrl: './images/taaza-food.jpeg' },
-    { id: 5, title: 'RoboxCraft', category: 'IoT and Robottics Project', type: 'software', imageUrl: './images/robox-craft.png' },
+    { id: 5, title: 'Portfolio Website', category: 'Personal Website', type: 'software', imageUrl: 'https://via.placeholder.com/400x200' }, // Added placeholder software project
+    { id: 2, title: 'RoboxCraft', category: 'IoT and Robottics Project', type: 'software', imageUrl: './images/robox-craft.png' }, // Changed type to 'software'
     { id: 3, title: 'Human Following Robot', category: 'AI Enabled Human Tracking Robot', type: 'robotics', imageUrl: './images/face-bot-robot.jpg' },
     { id: 4, title: 'Arduino Obstacle Avoiding Car', category: 'Obstacle Avoiding Car', type: 'robotics', imageUrl: './images/obstacle-bot-robot.jpg' },
     // Add more projects as needed, ensuring they have a 'type' property ('software' or 'robotics')
@@ -27,7 +28,7 @@ const ProjectsSection = () => {
       {/* Software Projects Section */}
       <div className="mb-12"> {/* Add margin bottom to separate sections */}
         <h3 className="text-2xl font-semibold mb-6 flex items-center"> {/* Sub-heading with icon */}
-          <Code size={28} className="text-blue-600 mr-3" /> Web Projects
+          <Code size={28} className="text-blue-600 mr-3" /> Software Projects
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {softwareProjects.map(project => (
@@ -38,7 +39,7 @@ const ProjectsSection = () => {
                          hover:scale-105 hover:shadow-lg" // Added hover animation classes
             >
               <img src={project.imageUrl} alt={project.title} className="w-full h-48 object-cover" />
-              <CardContent className="p-4">
+              <CardContent className="p-4 text-center"> {/* Added text-center here */}
                 <h3 className="text-lg font-semibold mb-1">{project.title}</h3>
                 <p className="text-gray-600 text-sm">{project.category}</p>
               </CardContent>
@@ -61,7 +62,7 @@ const ProjectsSection = () => {
                          hover:scale-105 hover:shadow-lg" // Added hover animation classes
             >
               <img src={project.imageUrl} alt={project.title} className="w-full h-48 object-cover" />
-              <CardContent className="p-4">
+              <CardContent className="p-4 text-center"> {/* Added text-center here */}
                 <h3 className="text-lg font-semibold mb-1">{project.title}</h3>
                 <p className="text-gray-600 text-sm">{project.category}</p>
               </CardContent>

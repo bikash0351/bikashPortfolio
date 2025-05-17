@@ -33,7 +33,10 @@ const Header = () => {
         {/* Buttons */}
         <div className="flex space-x-3 flex-shrink-0">
           {/* Removed 'Get In Touch' button */}
-          <Button>Send Email</Button> {/* Keep 'Send Email' button */}
+          {/* Wrapped Button in an anchor tag with mailto link */}
+          <a href="mailto:bikashgupta0351@gmail.com" target="_blank" rel="noopener noreferrer">
+            <Button>Send Email</Button> {/* Keep 'Send Email' button */}
+          </a>
         </div>
       </div>
     </header>
