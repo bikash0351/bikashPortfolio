@@ -32,8 +32,8 @@ const Header = () => {
 
         {/* Buttons */}
         <div className="flex space-x-3 flex-shrink-0">
-          <Button variant="outline" className="hidden md:inline-flex">Get In Touch</Button>
-          <Button>Send Email</Button> {/* Button text is now 'Send Email' */}
+          {/* Removed 'Get In Touch' button */}
+          <Button>Send Email</Button> {/* Keep 'Send Email' button */}
         </div>
       </div>
     </header>

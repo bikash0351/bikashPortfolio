@@ -22,10 +22,10 @@ const HeroSection = () => {
             <Linkedin size={24} className="text-gray-600 hover:text-gray-900 cursor-pointer" />
             <Github size={24} className="text-gray-600 hover:text-gray-900 cursor-pointer" />
           </div>
-          {/* Buttons - Updated "Get Template" to "Send Email" */}
+          {/* Buttons - Removed "Get in touch" button */}
           <div className="flex space-x-4">
-            <Button size="lg">Send Email</Button> {/* Changed button text */}
-            <Button variant="outline" size="lg">Get in touch</Button>
+            <Button size="lg">Send Email</Button> {/* Keep 'Send Email' button */}
+            {/* Removed 'Get in touch' button */}
           </div>
         </div>
 
