@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Instagram, Twitter, Youtube, Dribbble, Behance } from 'lucide-react'; // Placeholder icons
+import { Instagram, Twitter, Youtube, Dribbble, Globe } from 'lucide-react'; // Replaced Behance with Globe
 
 const HeroSection = () => {
   return (
@@ -20,7 +20,8 @@ const HeroSection = () => {
             <Twitter size={24} className="text-gray-600 hover:text-gray-900 cursor-pointer" />
             <Youtube size={24} className="text-gray-600 hover:text-gray-900 cursor-pointer" />
             <Dribbble size={24} className="text-gray-600 hover:text-gray-900 cursor-pointer" />
-            <Behance size={24} className="text-gray-600 hover:text-gray-900 cursor-pointer" />
+            {/* Using Globe icon as a placeholder */}
+            <Globe size={24} className="text-gray-600 hover:text-gray-900 cursor-pointer" />
           </div>
           {/* Buttons */}
           <div className="flex space-x-4">
