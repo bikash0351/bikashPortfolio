@@ -29,7 +29,7 @@ const AboutSection = () => {
             <div>
               <p className="font-bold text-lg">Technical Education in Computer Engineering</p> {/* Bold title */}
               <p className="text-gray-600 text-sm mb-2">Shree Nrisingh Madhyamika Vidyalaya, Birgunj | 2023</p> {/* Gray subtitle */}
-              <p className="text-gray-700">Had a brief knowledge about computer and its branches.</p> {/* Description */}
+              <p className="text-gray-700">Grabbed a brief knowledge about computer and its branches.</p> {/* Description */}
             </div>
             {/* Add more education items as needed */}
           </div>
