@@ -21,7 +21,8 @@ const Header = () => {
 
       {/* Navigation Links (Hidden on small screens, could add a mobile menu later) */}
       {/* Updated links to match website sections */}
-      <nav className="hidden md:flex space-x-6">
+      {/* Added mx-auto to center the nav block and push other items */}
+      <nav className="hidden md:flex space-x-6 mx-auto">
         <Link to="/" className="text-gray-700 hover:text-gray-900">Home</Link>
         <Link to="/about" className="text-gray-700 hover:text-gray-900">About</Link>
         <Link to="/projects" className="text-gray-700 hover:text-gray-900">Projects</Link>
