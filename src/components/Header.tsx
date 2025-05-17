@@ -5,9 +5,8 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between py-6 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto">
+    <header className="flex items-center justify-between py-6 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto md:gap-x-8"> {/* Added md:gap-x-8 */}
       {/* Logo/Name */}
-      {/* Added flex-shrink-0 to prevent shrinking */}
       <div className="flex items-center space-x-3 flex-shrink-0">
         <Avatar>
           {/* Replace with Bikas Gupta's image */}
@@ -21,8 +20,8 @@ const Header = () => {
       </div>
 
       {/* Navigation Links (Hidden on small screens, centered on md+) */}
-      {/* Added md:flex-grow and md:justify-center to take space and center links */}
-      <nav className="hidden md:flex md:flex-grow md:justify-center space-x-6">
+      {/* Removed flex-grow and justify-center from nav, relying on parent gap and justify-between */}
+      <nav className="hidden md:flex space-x-6">
         <Link to="/" className="text-gray-700 hover:text-gray-900">Home</Link>
         <Link to="/about" className="text-gray-700 hover:text-gray-900">About</Link>
         <Link to="/projects" className="text-gray-700 hover:text-gray-900">Projects</Link>
@@ -30,7 +29,6 @@ const Header = () => {
       </nav>
 
       {/* Buttons */}
-      {/* Added flex-shrink-0 to prevent shrinking */}
       <div className="flex space-x-3 flex-shrink-0">
         <Button variant="outline" className="hidden md:inline-flex">Get In Touch</Button>
         <Button>Email</Button> {/* Button text is now 'Email' */}
