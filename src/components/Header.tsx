@@ -7,7 +7,8 @@ const Header = () => {
   return (
     <header className="flex items-center justify-between py-6 px-4 md:px-8 lg:px-16 max-w-7xl mx-auto">
       {/* Logo/Name */}
-      <div className="flex items-center space-x-3">
+      {/* Added flex-shrink-0 to prevent shrinking */}
+      <div className="flex items-center space-x-3 flex-shrink-0">
         <Avatar>
           {/* Replace with Bikas Gupta's image */}
           <AvatarImage src="https://via.placeholder.com/40" alt="Bikas Gupta" />
@@ -20,8 +21,8 @@ const Header = () => {
       </div>
 
       {/* Navigation Links (Hidden on small screens, centered on md+) */}
-      {/* Removed flex-grow and justify-center from nav, relying on parent justify-between */}
-      <nav className="hidden md:flex space-x-6">
+      {/* Added md:flex-grow and md:justify-center to take space and center links */}
+      <nav className="hidden md:flex md:flex-grow md:justify-center space-x-6">
         <Link to="/" className="text-gray-700 hover:text-gray-900">Home</Link>
         <Link to="/about" className="text-gray-700 hover:text-gray-900">About</Link>
         <Link to="/projects" className="text-gray-700 hover:text-gray-900">Projects</Link>
@@ -29,7 +30,8 @@ const Header = () => {
       </nav>
 
       {/* Buttons */}
-      <div className="flex space-x-3">
+      {/* Added flex-shrink-0 to prevent shrinking */}
+      <div className="flex space-x-3 flex-shrink-0">
         <Button variant="outline" className="hidden md:inline-flex">Get In Touch</Button>
         <Button>Email</Button> {/* Button text is now 'Email' */}
       </div>
