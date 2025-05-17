@@ -20,17 +20,19 @@ const Header = () => {
       </div>
 
       {/* Navigation Links (Hidden on small screens, could add a mobile menu later) */}
+      {/* Updated links to match website sections */}
       <nav className="hidden md:flex space-x-6">
         <Link to="/" className="text-gray-700 hover:text-gray-900">Home</Link>
+        <Link to="/about" className="text-gray-700 hover:text-gray-900">About</Link>
         <Link to="/projects" className="text-gray-700 hover:text-gray-900">Projects</Link>
-        <Link to="/pricing" className="text-gray-700 hover:text-gray-900">Pricing</Link>
-        <Link to="/services" className="text-gray-700 hover:text-gray-900">Services</Link>
+        <Link to="/contact" className="text-gray-700 hover:text-gray-900">Contact</Link>
       </nav>
 
       {/* Buttons */}
       <div className="flex space-x-3">
         <Button variant="outline" className="hidden md:inline-flex">Get In Touch</Button>
-        <Button>Get Template</Button>
+        {/* Changed button text */}
+        <Button>Email</Button>
       </div>
     </header>
   );
