@@ -88,6 +88,8 @@ export function devErrorAndNavigationPlugin(): Plugin {
 }
 
 export default defineConfig(() => ({
+  // Set the base path for GitHub Pages
+  base: '/bikashPortfolio/',
   server: {
     host: "::",
     port: 8080,
