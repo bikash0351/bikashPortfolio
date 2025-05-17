@@ -4,10 +4,10 @@ import { Card, CardContent } from '@/components/ui/card'; // Using shadcn Card c
 const ProjectsSection = () => {
   // Placeholder project data
   const projects = [
-    { id: 1, title: 'Vireo - Social Sharing', category: 'Social Sharing App', imageUrl: 'https://via.placeholder.com/300x200' },
-    { id: 2, title: 'Climate Change', category: 'Nature Platform', imageUrl: 'https://via.placeholder.com/300x200' },
-    { id: 3, title: 'Blog Spot - Content Sharing Platform', category: 'Blog Feed', imageUrl: 'https://via.placeholder.com/300x200' },
-    { id: 4, title: 'Golfiers - Golf Course Booking Website', category: 'Golf Booking', imageUrl: 'https://via.placeholder.com/300x200' },
+    { id: 1, title: 'Taaza Food', category: 'Food Ordering Platform', imageUrl: './images/taaza-food.jpeg' },
+    { id: 2, title: 'RoboxCraft', category: 'IoT and Robottics Project', imageUrl: './images/robox-craft.png' },
+    { id: 3, title: 'Human Following Robot', category: 'AI Enabled Human Tracking Robot', imageUrl: './images/face-bot-robot.jpg' },
+    { id: 4, title: 'Arduino Obstacle Avoiding Car', category: 'Obstacle Avoiding Car', imageUrl: './images/obstacle-bot-robot.jpg' },
     // Add more projects as needed
   ];
 
