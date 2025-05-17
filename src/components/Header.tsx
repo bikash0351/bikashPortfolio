@@ -18,7 +18,7 @@ const Header = () => {
           </Avatar>
           <div>
             <div className="font-semibold text-lg">Bikas Gupta</div>
-            <div className="text-sm text-gray-600">UI Designer</div> {/* Placeholder title */}
+            <div className="text-sm text-gray-600">Web Developer</div> {/* Changed title */}
           </div>
         </div>
 
