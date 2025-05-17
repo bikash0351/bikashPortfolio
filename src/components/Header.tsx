@@ -20,8 +20,8 @@ const Header = () => {
       </div>
 
       {/* Navigation Links (Hidden on small screens, centered on md+) */}
-      {/* Using flex-grow and mx-auto to push navigation to center and create space */}
-      <nav className="hidden md:flex flex-grow justify-center space-x-6">
+      {/* Removed flex-grow and justify-center from nav, relying on parent justify-between */}
+      <nav className="hidden md:flex space-x-6">
         <Link to="/" className="text-gray-700 hover:text-gray-900">Home</Link>
         <Link to="/about" className="text-gray-700 hover:text-gray-900">About</Link>
         <Link to="/projects" className="text-gray-700 hover:text-gray-900">Projects</Link>
