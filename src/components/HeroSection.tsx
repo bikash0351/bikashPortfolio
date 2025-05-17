@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Instagram, Twitter, Youtube, Dribbble, Globe } from 'lucide-react'; // Replaced Behance with Globe
+// Updated imports for social media icons
+import { Instagram, Facebook, Linkedin, Github } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -14,18 +15,16 @@ const HeroSection = () => {
           <p className="text-gray-700 mb-8 text-lg">
             Hey, I'm Bikas, welcome to my world. I design high-performance, visually stunning websites using Framer—blending creativity, speed, and seamless user experience. {/* Placeholder description */}
           </p>
-          {/* Social Icons */}
+          {/* Social Icons - Updated */}
           <div className="flex space-x-4 mb-8">
+            <Facebook size={24} className="text-gray-600 hover:text-gray-900 cursor-pointer" />
             <Instagram size={24} className="text-gray-600 hover:text-gray-900 cursor-pointer" />
-            <Twitter size={24} className="text-gray-600 hover:text-gray-900 cursor-pointer" />
-            <Youtube size={24} className="text-gray-600 hover:text-gray-900 cursor-pointer" />
-            <Dribbble size={24} className="text-gray-600 hover:text-gray-900 cursor-pointer" />
-            {/* Using Globe icon as a placeholder */}
-            <Globe size={24} className="text-gray-600 hover:text-gray-900 cursor-pointer" />
+            <Linkedin size={24} className="text-gray-600 hover:text-gray-900 cursor-pointer" />
+            <Github size={24} className="text-gray-600 hover:text-gray-900 cursor-pointer" />
           </div>
-          {/* Buttons */}
+          {/* Buttons - Updated "Get Template" to "Send Email" */}
           <div className="flex space-x-4">
-            <Button size="lg">Get Template</Button>
+            <Button size="lg">Send Email</Button> {/* Changed button text */}
             <Button variant="outline" size="lg">Get in touch</Button>
           </div>
         </div>
@@ -34,7 +33,7 @@ const HeroSection = () => {
         <div className="bg-white p-6 rounded-lg shadow-md w-full md:w-1/3 lg:w-1/4 flex flex-col items-center text-center">
           {/* Replace with Bikas Gupta's image */}
           <img
-            src="https://via.placeholder.com/200x250" // Placeholder image
+            src="./images/bikash.jpeg" // Placeholder image
             alt="Bikas Gupta"
             className="rounded-lg mb-4 object-cover w-full h-auto"
           />
